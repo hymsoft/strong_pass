@@ -44,6 +44,22 @@
     }
 
     function generatePassword() {
-        alert('Password Creada')
+        let caracteresFinales = ''
+        let password = ''
+
+        for (propiedad in configuracion) {
+            if (configuracion[propiedad] === true) {
+                caracteresFinales += caracteres[propiedad] + ' '
+            }
+        }
+
+        caracteresFinales = caracteresFinales.trim().split(' ')
+
+        for (let i = 0; i < configuracion.caracteres; i++) {
+            password += caracteresFinales[Math.floor(Math.random() * caracteresFinales.length)]
+        }
+        app.elements.namedItem('input-password').value = password
     }
+
+    generatePassword()
 }())
