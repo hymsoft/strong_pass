@@ -61,5 +61,14 @@
         app.elements.namedItem('input-password').value = password
     }
 
+    function copyPassword() {
+        app.elements.namedItem('input-password').select()
+        document.execCommand('copy')
+        document.getElementById('alert-copy').classList.add('active')
+        setTimeout(() => {
+            document.getElementById('alert-copy').classList.remove('active')
+        }, 2000);
+    }
+
     generatePassword()
 }())
