@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/fontawesome-free-6.0.0-beta3-web/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de hyM Software" />
+        </div>
+        <form action="" class="app" id="app">
+            <div class="row password-length">
+                <div class="col">
+                    <label for="password-length"> Número de Caracteres </label>
+                </div>
+                <div class="col btns">
+                    <div>
+                        <button class="btn" id="btn-minus">
+                <i class="fas fa-minus"></i>
+              </button>
+                    </div>
+                    <div>
+                        <input type="text" name="password-length" id="password-length" readonly value="12" />
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-more">
+                <i class="fas fa-plus"></i>
+              </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row symbols">
+                <div class="col"><label for="symbols">Incluir Simbolos</label></div>
+                <div class="col">
+                    <button class="btn" id="symbols">
+              <i class="fas fa-check"></i>
+            </button>
+                </div>
+            </div>
+            <div class="row numbers">
+                <div class="col"><label for="numbers">Incluir Números</label></div>
+                <div class="col">
+                    <button class="btn" id="numbers">
+              <i class="fas fa-check"></i>
+            </button>
+                </div>
+            </div>
+            <div class="row upper-case">
+                <div class="col">
+                    <label for="upper-case">Incluir Mayúsculas</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="upper-case">
+              <i class="fas fa-check"></i>
+            </button>
+                </div>
+            </div>
+            <div class="row genertae">
+                <div class="col">
+                    <button class="btn btn-generate" id="btn-generate">
+              Generar <i class="fas fa-lock"></i>
+            </button>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="input-password" class="input-password" readonly value="U·%$·M" />
+                </div>
+            </div>
+            <div class="row alert">
+                <div class="col">
+                    <div class="alert-copy" id="alert-copy">
+                        <p><i class="fas fa-copy"></i> Texto copiado</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
