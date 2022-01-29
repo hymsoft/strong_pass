@@ -8,7 +8,8 @@
     }
     
     *::selection {
-        background-color: #33257e;
+        /* background-color: #33257e; */
+        background-color: #212139;
         color: #fff;
     }
     
@@ -93,6 +94,11 @@
         width: 100%;
         height: 40px;
         cursor: default;
+        background-color: #33257e;
+        color: #fff;
+    }
+    
+    .app .password-length .btns div:nth-child(2) input::selection {
         background-color: #33257e;
         color: #fff;
     }
